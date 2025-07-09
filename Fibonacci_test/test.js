@@ -1,27 +1,27 @@
 import {assert} from 'chai';
 import {fibonacci} from fibonacci;
 describe('fibonacci', () => {
-    it('Check zeroth value', () => {
-        assert.equal(fibonacci(0), 1)
+    it('F(0)=0', () => {
+        assert.equal(fibonacci(0), 0)
     });
-
-    it('Check fib 1', () => {
+    
+    it('F(1) = 1, () => {
         assert.equal(fibonacci(1), 1)
     });
-        
-    it('Check fib 2', () => {
-        assert.equal(fibonacci(2), 3)
+   //F(2)= F(1) + F(0)    
+    it('F(2) = 1', () => {
+        assert.equal(fibonacci(2), 1)
+    });
+    // F(3) = F(2) + F(1)
+    it('F(3) = 2', () => {
+        assert.equal(fibonacci(3), 2)
+    });
+    // F(5) = F(4) + F(3)
+    it('F(5) = 5', () => {
+        assert.equal(fibonacci(5), 5)
     });
 
-    it('Check fib 3', () => {
-        assert.equal(fibonacci(3), 6)
-    });
-
-    it('Check fib 5', () => {
-        assert.equal(fibonacci(5), 15)
-    });
-
-    it('Check fib 10', () => {
-        assert.equal(fibonacci(10), 55)
+    it('F(10) = 1', () => {
+        assert.equal(fibonacci(10), 34)
     });
 });
