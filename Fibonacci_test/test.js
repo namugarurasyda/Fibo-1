@@ -1,5 +1,5 @@
 import {assert} from 'chai';
-import {fibonacci} from fibonacci;
+import fibonacci from '../fibonacci';
 describe('fibonacci', () => {
     it('F(0)=0', () => {
         assert.equal(fibonacci(0), 0)
